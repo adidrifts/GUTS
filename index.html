@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GUTS GYM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="aurora-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div id="loader">
+    <div class="loader-box">
+      <h1>GUTS <span>GYM</span></h1>
+      <p>Loading your fitness experience...</p>
+    </div>
+  </div>
+
+  <div id="progressBar"></div>
+
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <header class="navbar">
+    <div class="logo">GUTS <span>GYM</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#plans">Plans</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#calculators">Calculators</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#join">Join</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="page hero-page">
+    <div class="hero-content fade-in">
+      <p class="tagline">WELCOME TO GUTS GYM</p>
+      <h1>Train With Power.<br />Transform With Discipline.</h1>
+      <p class="hero-text">
+        A premium gym experience built for strength, fitness, focus, and confidence.
+      </p>
+      <div class="hero-buttons">
+        <a href="#join" class="btn primary-btn">Join Now</a>
+        <a href="#plans" class="btn secondary-btn">View Plans</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section fade-in">
+    <div class="stats-container">
+      <div class="stat-card">
+        <h3 class="counter" data-target="500">0</h3>
+        <p>Happy Members</p>
+      </div>
+      <div class="stat-card">
+        <h3 class="counter" data-target="20">0</h3>
+        <p>Expert Trainers</p>
+      </div>
+      <div class="stat-card">
+        <h3 class="counter" data-target="10">0</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-card">
+        <h3 class="counter" data-target="24">0</h3>
+        <p>Hours Motivation</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="page about-page fade-in">
+    <div class="section-container split-layout">
+      <div class="text-side">
+        <p class="mini-title">ABOUT GUTS GYM</p>
+        <h2>Built For People Who Want More Than Just A Workout</h2>
+        <p>
+          GUTS GYM is designed for people who want discipline, consistency, and real transformation.
+          We provide expert training, premium equipment, cardio and strength zones, and an energizing
+          environment that helps members stay motivated.
+        </p>
+        <p>
+          Our mission is simple: help every member become stronger, healthier, and more confident.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Modern Equipment</h3>
+          <p>Latest machines and free weights for complete training.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Expert Guidance</h3>
+          <p>Professional trainers to support your goals.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Diet Support</h3>
+          <p>Basic nutrition guidance for better fitness results.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Motivating Environment</h3>
+          <p>A premium atmosphere that keeps you focused and consistent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans" class="page plans-page fade-in">
+    <div class="section-container">
+      <p class="mini-title">MEMBERSHIP OPTIONS</p>
+      <h2>Choose Your Plan</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>Basic</h3>
+          <p class="price">₹999 / month</p>
+          <ul>
+            <li>Gym Access</li>
+            <li>Locker Facility</li>
+            <li>1 Trainer Guide</li>
+            <li>Beginner Friendly</li>
+          </ul>
+          <button class="btn card-btn plan-select" data-plan="Basic">Select Plan</button>
+        </div>
+
+        <div class="card featured">
+          <div class="badge">Popular</div>
+          <h3>Standard</h3>
+          <p class="price">₹1499 / month</p>
+          <ul>
+            <li>Gym Access</li>
+            <li>Diet Suggestions</li>
+            <li>Cardio + Weights</li>
+            <li>Progress Support</li>
+          </ul>
+          <button class="btn card-btn plan-select" data-plan="Standard">Select Plan</button>
+        </div>
+
+        <div class="card">
+          <h3>Premium</h3>
+          <p class="price">₹2499 / month</p>
+          <ul>
+            <li>Personal Trainer</li>
+            <li>Diet Plan</li>
+            <li>Full Fitness Support</li>
+            <li>Advanced Guidance</li>
+          </ul>
+          <button class="btn card-btn plan-select" data-plan="Premium">Select Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trainers" class="page trainers-page fade-in">
+    <div class="section-container">
+      <p class="mini-title">OUR EXPERT TEAM</p>
+      <h2>Meet Our Trainers</h2>
+
+      <div class="card-container">
+        <div class="trainer-card">
+          <div class="trainer-avatar">RM</div>
+          <h3>Rohan Mehta</h3>
+          <h4>Strength Coach</h4>
+          <p>Expert in muscle building, power training, and weight progression.</p>
+          <div class="tag-row">
+            <span class="tag">Strength</span>
+            <span class="tag">Bulking</span>
+          </div>
+        </div>
+
+        <div class="trainer-card">
+          <div class="trainer-avatar">PS</div>
+          <h3>Priya Sharma</h3>
+          <h4>Fitness Trainer</h4>
+          <p>Specialist in fat loss, cardio, endurance, and flexibility workouts.</p>
+          <div class="tag-row">
+            <span class="tag">Fat Loss</span>
+            <span class="tag">Cardio</span>
+          </div>
+        </div>
+
+        <div class="trainer-card">
+          <div class="trainer-avatar">AP</div>
+          <h3>Arjun Patil</h3>
+          <h4>Nutrition Coach</h4>
+          <p>Supports members with meal guidance, healthy routines, and recovery.</p>
+          <div class="tag-row">
+            <span class="tag">Nutrition</span>
+            <span class="tag">Recovery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculators" class="page calculator-page fade-in">
+    <div class="section-container">
+      <p class="mini-title">FITNESS TOOLS</p>
+      <h2>BMI & Body Fat Calculator</h2>
+
+      <div class="calculator-grid">
+        <div class="calculator-card">
+          <h3>BMI Calculator</h3>
+          <input type="number" id="height" placeholder="Height in cm" />
+          <input type="number" id="weight" placeholder="Weight in kg" />
+          <button onclick="calculateBMI()">Calculate BMI</button>
+          <p id="bmiResult" class="result-text"></p>
+        </div>
+
+        <div class="calculator-card">
+          <h3>Body Fat Estimator</h3>
+          <select id="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <input type="number" id="ageCalc" placeholder="Age" />
+          <input type="number" id="waist" placeholder="Waist in cm" />
+          <button onclick="calculateBodyFat()">Estimate Body Fat</button>
+          <p id="fatResult" class="result-text"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="page gallery-page fade-in">
+    <div class="section-container">
+      <p class="mini-title">OUR SPACE</p>
+      <h2>Gym Gallery</h2>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80" alt="Gym interior">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Workout">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=80" alt="Weights">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=900&q=80" alt="Trainer">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=80" alt="Cardio">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="page faq-page fade-in">
+    <div class="section-container">
+      <p class="mini-title">COMMON QUESTIONS</p>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">What are the gym timings?</button>
+          <div class="faq-answer">
+            <p>We are open from 6:00 AM to 10:00 PM every day.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Do you provide personal training?</button>
+          <div class="faq-answer">
+            <p>Yes, personal training is available in the Premium membership plan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Is diet guidance available?</button>
+          <div class="faq-answer">
+            <p>Yes, diet suggestions are included in Standard and Premium plans.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can beginners join GUTS GYM?</button>
+          <div class="faq-answer">
+            <p>Absolutely. Beginners can join and receive guidance from our trainers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="page join-page fade-in">
+    <div class="section-container join-layout">
+      <div class="join-text">
+        <p class="mini-title">START TODAY</p>
+        <h2>Join GUTS GYM</h2>
+        <p>
+          Fill in your details and become part of a stronger community.
+          Your information will be securely stored in Firebase.
+        </p>
+      </div>
+
+      <form id="gymForm" class="join-form">
+        <input type="text" id="name" placeholder="Enter Name" required />
+        <input type="email" id="email" placeholder="Enter Email" required />
+        <input type="number" id="age" placeholder="Enter Age" required />
+
+        <select id="plan" required>
+          <option value="">Select Membership Plan</option>
+          <option value="Basic">Basic</option>
+          <option value="Standard">Standard</option>
+          <option value="Premium">Premium</option>
+        </select>
+
+        <button type="submit">Join GUTS</button>
+        <p id="msg" class="result-text"></p>
+      </form>
+
+      <div id="paymentGateway" class="payment-panel hidden">
+        <div class="payment-info">
+          <p class="mini-title">SECURE PAYMENT</p>
+          <h2>Pay for Your Membership</h2>
+          <p id="paymentDescription">
+            Payment QR code will appear here after clicking Join.
+          </p>
+        </div>
+
+        <div class="payment-grid">
+          <div class="payment-card">
+            <h3 id="selectedPlanName">No Plan Selected</h3>
+            <p class="payment-price" id="selectedPlanPrice">₹0</p>
+            <p id="selectedPlanDetails" class="payment-subtext">
+              Select a plan and click Join to generate your QR code.
+            </p>
+            <a id="payBtn" class="btn primary-btn" target="_blank" rel="noreferrer">
+              Open UPI Gateway
+            </a>
+          </div>
+
+          <div class="payment-card qr-card">
+            <img id="qrCodeImage" src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=Select+a+plan" alt="Payment QR Code" />
+            <p class="qr-note">Scan this QR code with your UPI app to pay.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="page contact-page fade-in">
+    <div class="section-container">
+      <p class="mini-title">GET IN TOUCH</p>
+      <h2>Contact Us</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>gutsgym@gmail.com</p>
+        </div>
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p>+91 98765 43210</p>
+        </div>
+        <div class="contact-card">
+          <h3>Location</h3>
+          <p>Navi Mumbai</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>© 2026 GUTS GYM. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </section>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
